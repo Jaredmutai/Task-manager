@@ -1,10 +1,12 @@
 const tasks = [];
 
-const addTask = (task) => {
-  tasks.push(task);
-  console.log(`Added task: ${task}`);
-};
+const addTask = ({ title, priority }) => {
+    tasks.push({ title, priority });
+    console.log(`Added task: ${title} with priority ${priority}`);
+  };
+  
 
 const getTasks = () => tasks;
 
 export { addTask, getTasks };
+
